@@ -1,0 +1,208 @@
+#Home {
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav>div:first-child,
+nav>div>a {
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.3s;
+}
+
+nav>div>a:hover {
+    text-decoration: underline;
+    font-size: larger;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+    background: #C6FFDD;
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    min-height: 50px;
+    align-items: center;
+}
+
+nav div:nth-child(2) {
+    display: flex;
+    gap: 15px;
+}
+
+.bg-img>img {
+    width: 100vw;
+    height: 65vh;
+    opacity: 0.35;
+}
+
+.linear_grad {
+    background: linear-gradient(to right, #00f260, #0575e6, #00f260);
+    background-size: 200%;
+    animation: gradientMove 5s linear infinite;
+}
+
+.linear_grad_text_clip {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@keyframes gradientMove {
+    0% {
+
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+}
+
+.aboveimg {
+    position: absolute;
+    top: 120px;
+    padding: 50px;
+    border-left: 20px solid rgb(220, 86, 188);
+    border-radius: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 27px 60px 27px 60px;
+    color: white;
+    flex-wrap: wrap;
+    margin: 15px 0px 15px 0px;
+}
+
+.svg {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.about {
+    background-color: rgb(126, 209, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    padding: 80px;
+    flex-wrap: wrap;
+}
+
+.about>div>div,
+.font-adjustment {
+    font-size: larger;
+}
+
+.about div:first-child {
+    width: 450px;
+}
+
+.about>img {
+    border-radius: 10px;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px 20px 50px 20px;
+    flex-wrap: wrap;
+    background-color: gray;
+}
+
+.card {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #5b94ab;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.foot {
+    border-radius: 14px;
+    position: relative;
+    top: -53px;
+    left: 90px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px 9px 18px;
+    flex-wrap: wrap;
+    min-width: 170px;
+}
+
+.head-services,.copyright{
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    background:antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #44a3c9;
+    outline: none;
+}
+
+.btn-submit {
+    background: linear-gradient(to right, #00f260, #0575e6);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(to right, #0575e6, #00f260);
+}
